@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600&display=swap');
+ body {
+     background-color:#FEFAE0;
+     font-family: 'Inconsolata', monospace;
+     margin:0;
+}
+/*Størrelse på overskrift*/
+ #underoverskift-kontakt {
+    padding-top: 1%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2e3c1e;    
+}
+/*Fikser skjemaets størrelse og posisjon*/
+ .form-kontakt {
+     margin-left: 36vw;
+     margin-bottom: 35px;
+}
+ input[type=text], select, textarea {
+     width: 400px;
+     padding: 12px;
+     border: 1px solid #fffbe1;
+     border-radius: 4px;
+     background-color: #ede9ce;
+     resize: vertical;
+}
+.kontakt-label {
+     padding: 12px 12px 12px 0;
+     display: inline-block;
+}
+/*Fikser knapp under skjema*/
+ .knapp-kontakt{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+ input[type=submit] {
+     background-color: #606C38;
+     color: white;
+     padding: 12px 20px 10px 10px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     width: 400px;
+}
+ input[type=submit]:hover {
+     background-color: #454e25;
+}
+/*Autofill*/
+input:-webkit-autofill {
+    border: 3px solid blue;
+  }
+input:autofill {
+    border: 3px solid blue;
+  }
+  /*Tekst over skjema*/
+#infotekst-kontakt{
+    font-size: 18px;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    width: 45%;
+    position: relative;   
+}
+/* Clear floats after the columns */
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+/*Responsivitet*/
+ @media only screen and (max-width: 1000px){
+     
+    .form-kontakt{
+        margin-left: 20%;
+    }
+    #infotekst-kontakt{
+        width: 80%;
+    }
+     input[type=text], textarea{
+         width: 80%;
+    }
+    input[type=submit], textarea{
+        width: 80%;
+   }
+     #underoverskift-kontakt {
+         color:#606C38;
+         font-size: 30px;
+         padding-bottom: 1%;
+         
+    }
+    
+}

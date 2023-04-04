@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600&display=swap');
+body {
+    background-color:#FEFAE0;
+    font-family: 'Inconsolata', monospace;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+/*Fikser flexboksenes posisjon*/
+.container-forside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+    border: 0em;
+    filter: blur(199%);
+  }
+
+  /*Setter headerbildets lysstyrke ned og fikser størrelsen*/
+  .bakgrunnsbilde {
+    height: auto;
+    filter: brightness(60%);
+  }
+
+  /*Tekst over headerbildet*/
+  #headline {
+    position: absolute;
+    color: #FEFAE0;
+    font-size: 4vw;
+    text-shadow: 2px 2px 8px rgb(38,38,29);
+    padding-left: 6%;
+    padding-top: 6%;
+  }
+
+  /*Book-event knappen*/
+  .knapp {
+    position: absolute;
+    margin-top: 20vw;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+    height: 80px;
+    width: 350px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    margin-left: 6%;
+    margin-top: 28%;
+}
+
+.knapp:hover  {
+    background-color: #606C38;
+    cursor: pointer;
+}
+
+/*Teksten inni knappen*/
+ #bookinglink:hover{
+     color: #FEFAE0;
+}
+
+/*Teksten inni knappen*/
+ #bookinglink {
+     color: #FEFAE0;
+     text-decoration: none;
+     font-size: 60px;
+}
+
+
+/*Informasjonstekst under headerbildet*/
+/*Fikser flexboksers posisjon*/
+.info-seksjon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  padding-left: 85px;
+  color: beige;
+  background-color: #181912;
+}
+
+/*Fikser posisjon og størrelse  på venstre del av infoteksten*/
+.diverse-info {
+  align-self: auto;
+  padding-right: 25%;
+  font-size: 25px;
+}
+
+#velkommentekst-index{
+  font-size: 2vw;
+}
+
+/*Fikser posisjon og størrelse  på høyre del av infoteksten*/
+.åpningstider {
+  align-self: auto;
+  padding-right: 10%;
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+#underoverskrift-index{
+  font-size: 2vw;
+}
+
+
+/* Responsiv forside */
+@media only screen and (max-width: 800px){
+
+    #headline {
+      position: absolute;
+      font-size: 5vw;
+      word-wrap: break-word;
+      height: 70%;
+      padding-bottom: 20%;
+      color: #FEFAE0;
+     
+    }
+
+    #velkommentekst-index{
+      font-size: 5vw;
+    }
+
+    #underoverskrift-index{
+      font-size: 5vw;
+    }
+
+    .åpningstider {
+      font-size: 16px;
+    }
+
+    .diverse-info {
+      font-size: 16px;
+    }
+
+    .bakgrunnsbilde {
+      height: 55vw;
+      width: auto;
+      
+    }
+  
+    .knapp {
+      height: 4%;
+      width: 33%; 
+      position: absolute;
+      margin-top: 26vw;
+      
+    }
+    #bookinglink {
+        font-size: 22px;
+        position: absolute;
+        left: 7%;
+        justify-content: center;  
+        height: 10%; 
+    }
+
+    .info-seksjon {
+    padding-left: 30px;
+    }
+  }

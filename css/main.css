@@ -1,0 +1,40 @@
+/* main.css brukes hovedsaklig til koding av footer. 
+Vi bruker også main.css til å fjerne scroll-bar. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600&display=swap');
+ body {
+     background-color:#FEFAE0;
+     font-family: 'Inconsolata', monospace;
+     margin:0;
+}
+footer {
+  background-image: linear-gradient(#6b5336, #816747);
+  color:#FEFAE0;
+  height:150px;
+  padding:30px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top:30px;
+}
+ /*Footer linker*/
+ .telefonnummer {
+  color: #FEFAE0;
+}
+.telefonnummer:hover{
+  color: #283618;
+}
+ .mailen {
+     color: #FEFAE0;
+}
+ .mailen:hover {
+     color: #283618;
+}
+ a {
+     text-decoration: none;
+}
+/*tar vekk Scroll bar*/
+ body::-webkit-scrollbar {
+     display: none;
+}
+
+  
