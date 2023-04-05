@@ -6,9 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/navbar.css" >
       <link rel="stylesheet" href="css/main.css" >
-      <link rel="stylesheet" href="css/community.css" >
+      <link rel="stylesheet" href="css/sectionsny.css" >
       <link rel="icon" type="image/icon type" href="bilder/firework.png">
-      <title>Booking</title>
+      <title>Community</title>
    </head>
    <body>
     <!---Navbar-->
@@ -34,59 +34,32 @@
                 </form>
         </nav>
      
-       <!--infotekst-->
-       <section>
-      <div class="container-booking">
-         <div class="info-tekst">
-            <p class="overskrift-booking" tabindex="0">Community
-            </p>
-            <p tabindex="0">LOREM IPSUM
-               <br><br>
-               LOREM IPSUM
-            </p>
-            <br>
-      </div>
-       </section>
 
-      <!--Skjema-->
-      <section>
-      <div>
-        <form class="search">
-            <input class="searchTerm" placeholder="Enter your search term ..." /><input class="searchButton" type="submit" />
-          </form>
-         <form class="booking-form">
-            <label for="event" class="booking-label">Velg en kategori:</label><br>
-            <select name="evnet" id="event">
-               <option value="Firmaselskap">Firmaselskap</option>
-               <option value="Event">Event</option>
-               <option value="Bryllup">Bryllup</option>
-               <option value="Bursdag">Bursdag</option>
-               <option value="Seminar">Seminar</option>
-               <option value="Lokale">Leie lokale</option>
-               <option value="Konfirmasjon">Konfirmasjon</option>
+
+      <!--Filter-->
+      <div class="container">
+         <div class="search-field">
+            <i class="ion-search"></i>
+            <input type="text" placeholder="e.g. How to create a form?">
+         </div>
+         <div class="search-category">
+            <select name="" id="">
+               <option value="" selected disabled>Category</option>
+               <option value="">HTML</option>
+               <option value="">CSS</option>
+               <option value="">JavaScript</option>
+               <option value="">PHP</option>
+               <option value="">MySQL</option>
+               <option value="">Python</option>
             </select>
-
-            <br>
-            <label for="folk" class="booking-label">Antall personer:</label><br>
-            <select name="folk" id="folk" label="folk">
-               <option value="1">10-20</option>
-               <option value="2">20-40</option>
-               <option value="3">40-80</option>
-               <option value="4">80-100</option>
-               <option value="5">100-200</option>
-            </select>
-            </div>
-
-         </form>
+         </div>
+         <div class="search-btn">
+            <button type="submit">Search</button>
+         </div>
+         
       </div>
-   </section>
+   
+
+      
     
-         <footer>
-            <p>For spørsmål knyttet til booking kontakt oss på <a href="tel:+ 47 406 31 411" class="telefonnummer">+47 406 31 411</a> eller <a href="mailto:booking@thenextevent.no" class="mailen">booking@thenextevent.no</a></p>
-            <br>
-            <address>
-               Dronning Eufemias gate 20
-               <br> 0194 Oslo
-            </address>
-         </footer>
-   </body>
+         
