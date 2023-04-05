@@ -7,26 +7,10 @@ input[type=text], select, textarea {
     background-color: #ede9ce;
     resize: vertical;
   }
-  input[type=date], select {
-    width: 10%;
-    padding: 12px;
-    border: 1px solid #ede9ce;
-    background-color: #ede9ce;
-    border-radius: 4px;
-    resize: vertical;
-  }
+
   .booking-label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-  }
-  input[type=submit] {
-    background-color: #606C38;
-    color: white;
-    padding: 12px 20px 10px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 400px;
   }
   input[type=submit]:hover {
     background-color: #283618;
@@ -72,11 +56,6 @@ input[type=text], select, textarea {
   .booking-form{
     margin-left: 36vw;
     padding-bottom: 3vw;
-  }
-  .knapp-booking{
-    padding-top: 2vw;
-    padding-bottom: 1vw;
-  
   }
   
   /*Autofill skjema*/
@@ -183,4 +162,48 @@ input[type=text], select, textarea {
         margin-right: -38%;
         top:90vw;
    }
+   @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+   .search {
+     width: 100%;
+     position: relative;
+   }
+   .search:before { 
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 40px;
+     height: 40px;
+     line-height: 40px;
+     font-family: "FontAwesome";
+     content: "\f002";
+     background: #8fc357;
+     text-align: center;
+     color: #fff;
+     border-radius: 5px;
+     -webkit-font-smoothing: subpixel-antialiased;
+     font-smooth: always;
+   }
+   
+   .searchTerm {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     width: 100%;
+     border: 5px solid #8fc357;
+     padding: 5px;
+     height: 40px;
+     border-radius: 5px;
+     outline: none;
+   }
+   
+   .searchButton {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 30px;
+     height: 30px;
+     opacity: 0;
+     cursor: pointer;
+   }
+   
   }
